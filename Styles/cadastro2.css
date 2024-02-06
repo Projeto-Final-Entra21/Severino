@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap');
+
+
+:root {
+    --color-primary: #162445;
+    --color-secondary: #FFF;
+    --azul-royal: #3f589e;
+    --azul-profundo: #140f07;
+    --fundo-card-timer: rgba(20, 68, 128, 0.30);
+    --lils: #738dfd;
+    --linear-botes: linear-gradient(180deg, #6466cf 0%, #144480 100%);
+    --fundo-card: rgba(255, 255, 255, 0.4);
+    --fundo-card-concludo: rgba(40, 84, 143, 0.6);
+}
+
+[data-contexto] {
+    --main-bg-color: linear-gradient(180deg, #83a8ee 0%, #284d7c 48.44%, #01080E 100%);
+}
+
+
+html {
+    background: var(--main-bg-color);
+    min-height: 100vh;
+    font-size: 10px;
+    scroll-behavior: smooth;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+
+}
+
+a {
+    font-family: 'Unbounded', cursive;
+}
+
+
+body {
+    min-height: 100vh;
+    background: url("../IMG/pattern.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.app__header {
+    outline: solid var(--azul-royal);
+    background-color: rgba(137, 96, 226, 0.176);
+    display: flex;
+
+}
+
+.todosBotoescabecalho {
+    position: absolute;
+    display: flex;
+    justify-content: right;
+    gap: 2em;
+    margin: 2em 4em 0 0;
+    right: 0;
+    top: 15px;
+}
+
+.botaoCabecalho {
+    font-size: 15px;
+    text-decoration: none;
+    color: var(--color-secondary);
+    background: var(--linear-botes);
+    padding: 1em;
+    border-radius: 10px;
+}
+
+.botaoCabecalho:active {
+    background: #284d7c;
+}
+
+.app__logo-figure {
+    display: flex;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.app__logo-image {
+    margin-top: 2rem;
+    width: 52rem;
+    height: 10rem;
+}
+
+
+.primeirasColunas {
+    display: flex;
+    justify-content: space-around;
+    gap: none;
+    margin: 7rem;
+    height: 100%;
+}
+
+.coluna1 {
+    outline: solid;
+    outline-color: #6466cf79;
+    border-radius: 25px;
+    padding: 5rem;
+    width: 40%;
+    margin-right: 32rem;
+    background-color: rgba(137, 96, 226, 0.176);
+    color: var(--color-secondary);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: Inter;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.logo {
+    height: 30px;
+}
+
+.container {
+    outline: solid;
+    outline-color: #1624453b;
+    box-shadow: #01080E 1px;
+    position: relative;
+    height: fit-content;
+    width: 30%;
+    padding: 2rem;
+    margin: 0;
+    background-color: var(--fundo-card);
+    border-radius: 25px;
+    align-items: center;
+    -webkit-box-shadow: -8px 12px 17px -1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: -8px 12px 17px -1px rgba(0, 0, 0, 0.75);
+    box-shadow: -8px 12px 17px -1px rgba(0, 0, 0, 0.438);
+
+}
+
+#container-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs {
+    height: fit-content;
+    margin: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+input {
+    padding-left: 15px;
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.69);
+    border: none;
+    color: rgba(0, 0, 0, 0.40);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+form {
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.69);
+    width: fit-content;
+}
+
+.Complemento {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 2vh;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.40);
+    line-height: 1.1;
+    display: grid;
+    grid-template-columns: 1em auto;
+    gap: 0.5em;
+}
+
+.Complemento + .Complemento {
+    margin-top: 1em;
+}
+
+input[type="radio"] {
+    appearance: none;
+    font: inherit;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid;
+    border-radius: 50px;
+    display: grid;
+    place-content: center;
+}
+
+input:focus {
+    border: 2px solid rgb(27, 116, 228);
+    box-shadow: rgba(68, 131, 208, 0.345) 0px 0px 0px 2px;
+    outline: none;
+}
+
+
+input[type="radio"]:focus {
+    border: 2px solid rgb(27, 116, 228);
+    box-shadow: rgba(68, 131, 208, 0.345) 0px 0px 0px 2px;
+    background-color: rgb(27, 116, 228);
+    outline: max(2px, 0.15em) solid --;
+    outline-offset: max(2px, 0.15em);
+}
+
+#end {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.btnFinal {
+    background: var(--linear-botes);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 35px;
+    padding: 5px;
+    color: white;
+    border: none;
+
+}
+
+.btnFinal:active {
+    background: #284d7c;
+}
+
+#linkPerfil {
+
+    width: fit-content;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0rem 2.2rem 5rem 0rem;
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-contexto>
+
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Severino</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css"
+          integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw=="
+          crossorigin="anonymous" referrerpolicy="no-referrer"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prata&family=Unbounded:wght@200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"/>
+    <link rel="stylesheet" href="./Styles/frontPage.css"/>
+    <script src="./Script/frontPage.js" defer></script>
+    <script src="./Script/jquery-3.7.1.js"></script>
+
+    <script>
+
+        $(document).ready(function () {
+            $(".app__card-button--prestador").click(function (e) {
+                $("#cliente").slideUp(200);
+                $("#prestador").slideDown(200);
+
+            })
+            $(".app__card-button--cliente").click(function (e) {
+                $("#prestador").slideUp(200);
+                $("#cliente").slideDown(200);
+            })
+
+        })
+
+    </script>
+</head>
+
+<body>
+<main class="app">
+
+    <header class="app__header">
+        <div class="todosBotoescabecalho">
+            <a href="#sobreNos" class="botaoCabecalho">Sobre Nós</a>
+            <a href="#espacoLogin" class="botaoCabecalho">Login</a>
+            <a href="./cadastro2.html" class="botaoCabecalho">Cadastre-se</a>
+        </div>
+        <figure class="app__logo-figure">
+            <img class="app__logo-image" src="../IMG/logo-branca_1.png" alt=""/>
+        </figure>
+    </header>
+
+    <section class="app__section-banner-container">
+        <h1 class="app__title">
+            Soluções à um<br/>
+            <strong class="app__title-strong" id="distancia"> toque de distância.</strong>
+        </h1>
+        <div id="camposDeLogin">
+
+            <label for="" id="label-">Entrar na sua conta</label>
+
+            <div id="formularioLogin">
+                <input type="email" name="email" id="emailLogin" class="caixaLogin" placeholder="E-mail">
+                <input type="password" name="senha" id="senhaLogin" class="caixaLogin" placeholder="Senha">
+            </div>
+            <div class="app__card-primary-button-wrapper">
+
+            </div>
+            <label for="" id="labelCadastro">Não tem uma conta?
+                <a href="./cadastro2.html">
+                    Cadastre-se
+                </a>
+            </label>
+        </div>
+
+    </section>
+
+    <section class="app__section-card-container">
+        <div class="app__card" id="espacoLogin">
+            <ul class="app__card-list">
+                <li class="app__card-list-item">
+                    <button class="app__card-button app__card-button--prestador" id="IDprestador">
+                        Prestador de Serviços
+                    </button>
+                </li>
+                <li class="app__card-list-item">
+                    <button class="app__card-button app__card-button--cliente" id="IDcliente">
+                        Cliente
+                    </button>
+                </li>
+            </ul>
+
+            <div id="prestador">
+                &emsp; Numa plataforma dedicada à divulgação de serviços autônomos, o prestador
+                destaca-se ao publicar uma variedade de serviços, exibindo com orgulho seu trabalho.
+                Além disso, a plataforma oferece a valiosa funcionalidade de permitir que o prestador avalie os
+                clientes,
+                contribuindo para a construção de uma comunidade transparente e confiável.
+            </div>
+
+            <div id="cliente">
+                &emsp; Ao utilizar a plataforma, o cliente tem a conveniência de
+                contratar prestadores disponíveis para todas as adversidades na região, facilitando a comunicação para
+                discutir
+                detalhes e preços do serviço desejado. Sua experiência é aprimorada, pois pode indicar ou não o
+                prestador com base na qualidade do serviço prestado,
+                promovendo uma comunidade colaborativa e transparente.
+            </div>
+
+        </div>
+    </section>
+
+    <section class="app__section-task-container">
+        <div class="app__section-task-content">
+            <header class="app__section-active-task">
+                <h2 class="sobreNos" id="sobreNos">Sobre nós</h2>
+            </header>
+
+            <p class="sobreNos">
+                &emsp; Após análise das plataformas digitais já existentes, percebeu-se a necessidade de
+                uma plataforma que entrelace interatividade, apresentação do perfil dos contratados e
+                que permita ao contratante escolher qual profissional deseja contratar. Deste modo, a
+                plataforma SEVERINO emerge no mercado com foco primordial na experiência dos usuários, proporcionando
+                uma interação intuitiva, interativa e segura tanto para o contratante quanto para o contratado.
+                <br><br>
+                &emsp; A plataforma SEVERINO é uma solução inovadora que visa simplificar o processo de contratação de
+                profissionais. Com sua interface intuitiva e interativa, os usuários podem facilmente visualizar
+                o perfil dos contratados e escolher o profissional que melhor atenda às suas necessidades.
+                Além disso, a plataforma oferece segurança tanto para o contratante quanto para o contratado,
+                garantindo uma experiência tranquila e confiável.
+                <br><br>
+                &emsp; Com o SEVERINO, a contratação de profissionais nunca foi tão fácil e segura. Experimente agora
+                mesmo e
+                descubra como a plataforma pode ajudá-lo a encontrar o profissional ideal para o seu projeto.
+            </p>
+        </div>
+    </section>
+
+    <footer class="app__footer">
+        <p class="app__footer-text">
+            Projeto executado por alunos do programa Entra21 - 2023 no curso de Lógica de Java.
+        </p>
+    </footer>
+</main>
+</body>
+
+</html>
