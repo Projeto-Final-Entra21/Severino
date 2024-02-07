@@ -94,7 +94,7 @@ a {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    gap: 30rem;
+    gap: 10rem;
 }
 
 
@@ -340,7 +340,6 @@ hr {
     padding: 2rem 2rem 7rem 2rem;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
     border-radius: 20px;
     background-color: rgba(137, 96, 226, 0.176);
 }

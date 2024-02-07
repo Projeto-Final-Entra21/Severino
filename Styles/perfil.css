@@ -31,6 +31,7 @@ hr {
 body {
     overflow-x: hidden;
     height: 70rem;
+    background: rgba(108, 156, 199, 0.26)
 }
 
 label {
@@ -165,7 +166,6 @@ a:link {
     flex-direction: column;
     height: 100%;
     width: 70rem;
-    z-index: -1;
     /*Deixar fixado a aba ou não??*/
 }
 
@@ -174,7 +174,6 @@ a:link {
     padding: 10px;
     gap: 2rem;
     height: fit-content;
-    outline: 2px black solid;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 300;
     font-size: 1.6rem;
@@ -229,9 +228,8 @@ a:link {
     font-family: Inter;
     width: fit-content;
 }
-
-#infoDiv-btn:hover {
-    background-color: #284d7c;
+#infoDiv-btn:active{
+    background: #144480;
 }
 
 #sobreMim {
@@ -256,6 +254,12 @@ label {
     padding-top: 1rem;
 }
 
+#coment-topo{
+    display: flex;
+    justify-content: space-between;
+    margin: .5rem;
+}
+
 #coment {
     height: fit-content;
     outline: solid 2px rgba(41, 60, 167, 0.349);
@@ -266,7 +270,6 @@ label {
     min-width: 97.2%;
     text-overflow: none;
     padding: 1rem;
-    position: relative;
 }
 
 #coment-btn {
@@ -282,14 +285,27 @@ label {
     font-weight: 400;
     font-family: Inter;
     width: fit-content;
-    position: absolute;
-    padding: .3rem;
-    right: 0;
-    margin: .5rem 1rem 1rem 1rem;
+    padding: 0 1rem 0 1rem;
+}
+
+#coment-area{
+    display: none;
 }
 
 .coment-area-user{
     
+}
+
+#posts{
+    height: fit-content;
+    outline: solid 2px rgba(41, 60, 167, 0.349);
+    border-radius: 5px;
+    font-size: 1.5rem;
+    max-width: fit-content;
+    min-width: 97.2%;
+    text-overflow: none;
+    padding: 1rem;
+    margin-top: 10%;
 }
 
 .app__footer {
