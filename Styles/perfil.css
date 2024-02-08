@@ -270,6 +270,7 @@ label {
     min-width: 97.2%;
     text-overflow: none;
     padding: 1rem;
+    margin-top: .5rem;
 }
 
 #coment-btn {
@@ -287,6 +288,17 @@ label {
     width: fit-content;
     padding: 0 1rem 0 1rem;
 }
+
+
+.fa-arrow-down{
+    transform: rotate(0deg);
+    transition: transform 90ms linear;
+  }
+  
+  .fa-arrow-down.open{
+    transform: rotate(180deg);
+    transition: transform 90ms linear;
+  }
 
 #coment-area{
     display: none;

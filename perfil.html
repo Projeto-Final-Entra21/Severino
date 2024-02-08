@@ -105,8 +105,8 @@
                 <div id="coment-topo">
                     <label for="">Comentários</label>
                     <button id="coment-btn">
-                        Expandir
-                        <i class="fa-solid fa-arrow-down"></i>
+                        <span id="txt">Expandir</span>
+                        <i id="setaRotate" class="fa-solid fa-arrow-down"></i>
                     </button>
                     <!--<i class="fa-solid fa-arrow-up"></i>-->
                 </div>
@@ -158,13 +158,13 @@
             </div>
             <div id="posts">
 
-                    <div id="">
+                <div id="">
 
-                    </div>
-                    
-                    <div class="post-item">
+                </div>
 
-                    </div>
+                <div class="post-item">
+
+                </div>
 
             </div>
         </div>
@@ -182,12 +182,33 @@
 <script src="./Script/jquery-3.7.1.js"></script>
 <script src="./Script/perfil.js"></script>
 <script>
-    $(document).ready(function () {
-        $("#coment-btn").click(function (e) {
-            $("#coment-area").slideToggle(200);
 
+
+    var icon = document.getElementById("setaRotate");
+    var btnSeta = document.getElementById("coment-btn");
+    var text = document.getElementById("txt");
+
+    $(document).ready(function () {
+        $(btnSeta).click(function (e) {
+            $("#coment-area").slideToggle(200);
         })
     })
+
+    var open = false;
+
+    btnSeta.addEventListener('click', function () {
+        if(open){
+      icon.className = 'fa fa-arrow-down';  
+      text.textContent = "Expandir"
+
+    } else{
+      icon.className = 'fa fa-arrow-down open';
+      text.textContent = "Esconder"
+    }
+
+        open = !open;
+    });
+
 </script>
 
 </html>
