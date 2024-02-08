@@ -30,10 +30,9 @@ html {
     max-width: 100%;
 }
 
-a {
+a.botaoCabecalho {
     font-family: 'Unbounded', cursive;
 }
-
 
 body {
     min-height: 100vh;
@@ -224,7 +223,6 @@ input[type="radio"] {
 }
 
 #linkPerfil {
-
     width: fit-content;
     position: absolute;
     bottom: 0;
