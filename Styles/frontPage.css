@@ -40,50 +40,36 @@ h2,
 h3,
 h4,
 h5,
-h6,
-a {
+h6 {
     font-family: 'Unbounded', cursive;
 }
 
+a{
+    text-decoration: none;
+    color: #6175d1c4;
+}
+
+span{
+    color: #97f5e8;
+}
 .app__header {
     outline: solid var(--azul-royal);
     background-color: rgba(137, 96, 226, 0.176);
     display: flex;
-
-}
-
-.todosBotoescabecalho {
-    position: absolute;
-    display: flex;
-    justify-content: right;
-    gap: 2em;
-    margin: 2em 4em 0 0;
-    right: 0;
-    top: 15px;
-}
-
-.botaoCabecalho {
-    font-size: 15px;
-    text-decoration: none;
-    color: var(--color-secondary);
-    background: var(--linear-botes);
-    padding: 1em;
-    border-radius: 10px;
-}
-
-.botaoCabecalho:active {
-    background: #284d7c;
+    justify-content: center;
 }
 
 .app__logo-figure {
     display: flex;
     margin: 2rem;
+    width: 40rem;
 }
 
 .app__logo-image {
     width: 100%;
     height: 10rem;
     max-width: 40rem;
+    user-select: none;
 }
 
 .app__section-banner-container {
@@ -99,24 +85,6 @@ a {
     text-align: center;
 }
 
-
-.app__image {
-    background-color: #ffffff9d;
-    border-radius: 50% 50% 0 0;
-}
-
-.app__image-figure {
-    margin: 0;
-    padding: 0;
-    width: 24rem;
-    position: relative;
-    justify-content: center;
-    align-items: center;
-}
-
-.app__image-figure2 {
-    border: 2px solid #ffffff9d;
-}
 
 hr {
     border-color: #ffffff9d;
@@ -179,8 +147,8 @@ hr {
     border: none;
     cursor: pointer;
     outline: inherit;
-    width: 25rem;
-    height: 8rem;
+    width: fit-content;
+
     border-radius: 15px;
 }
 
@@ -421,6 +389,14 @@ hr {
 }
 
 .sobreNos {
+    font-size: 2.6rem;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 120%;
+}
+
+.sobreProjeto {
     font-size: 2.6rem;
     font-family: Montserrat;
     font-style: normal;
