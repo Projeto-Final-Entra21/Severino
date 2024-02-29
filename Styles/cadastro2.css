@@ -99,8 +99,7 @@ body {
 }
 
 .coluna1 {
-    outline: solid;
-    outline-color: #6466cf79;
+    outline: solid #6466cf79;
     border-radius: 25px;
     padding: 5rem;
     width: 40%;
